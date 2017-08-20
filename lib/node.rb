@@ -2,19 +2,9 @@ class Node
   attr_reader :data
   attr_accessor :next_node
 
-  def initialize(data)
+  def initialize(data, next_node = nil)
     @data = data
-    @next_node = nil
+    @next_node = next_node
   end
-
-  # def data
-  #   @data
-  # end
-  #let's use attr reader instead
-
-  # def next_node
-  #we can use attr_accessor and put #next_node = nil in initialize instead of defining the method down here
-  # end
-
-
+  
 end
